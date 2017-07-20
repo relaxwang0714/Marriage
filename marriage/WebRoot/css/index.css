@@ -1,0 +1,474 @@
+			/*a标签*/
+			a:link{
+				color: black;
+				text-decoration: none;
+			}
+			a:active{
+				color: red;
+				text-decoration: none;
+			}
+			
+			body{
+				background-color: #f6f6f6;
+			}
+			
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			
+			/*p标签*/
+			p{
+				margin: 5px auto;
+			}
+			
+			/*a标签*/
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			
+			/*最顶部*/
+			#head{
+				width:100%;
+				height:18px;
+				background-color: black;
+			}
+			
+			/*顶部*/
+			#top{
+				width:100%;
+				height:118px;
+				margin: 0 auto;
+			}
+			/*顶部logo站名*/
+			#top .top_left{
+				width:20%;
+				height:118px;
+				float: left;
+				line-height: 70px;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 28px;
+				/*border: 1px solid black;*/
+			}
+			
+			/*导航栏*/
+			#top .top_right{
+				width:80%;
+				height: 88px;
+				float:left;
+				position: relative;
+			}
+			#top .top_right .tr_1{
+				position: absolute;
+				bottom: 20px;
+				right: 70px;
+				font-size: 15px;
+				font-family: '宋体';
+			}
+			#top .top_right .tr_2{
+				position: absolute;
+				bottom: 20px;
+				right: 90px;
+				font-size: 15px;
+				font-family: '宋体';
+			}
+			
+			/*展示栏*/
+			#show{
+				width: 100%;
+				height: 529px;
+				margin: 0 auto;
+				/*border: 1px solid black;*/
+				margin-top: 4px;
+				background-image: url(../img/bg_1.png);
+				background-size: 100% 529px;
+				/*position: relative;*/
+			}
+			
+			/*图片展示*/
+			#show img{
+				width: 100%;
+				height: 529px;
+			}
+			
+			/*展示栏中心*/
+			#show .s_center{
+				position: absolute;
+				width: 100%;
+				height: 529px;
+				/*top: 50%;
+				
+				margin-top: -93px;*/
+				color: black;
+				/*border: 1px solid black;*/
+			}
+			#show .s_center .div1{
+				width: 100%;
+				height: 172px;
+				margin-top: 96px;
+				background-color: #ffeb00;
+				opacity: 0.75;				/*非IE下的透明度*/
+				filter: alpha(opacity=75);	/*IE下的透明度*/
+			}
+			#show .s_center .div1 .d1{
+				font-size: 68px;
+				letter-spacing: 5px;	/*字符间距*/
+				margin-left: 106px;
+			}
+			#show .s_center .div2{
+				width: 100%;
+				height: 62px;
+				line-height: 62px;
+				background-color: #403f40;
+				opacity: 0.85;				/*非IE下的透明度*/
+				filter: alpha(opacity=85);	/*IE下的透明度*/
+				margin-top: 0px;
+			}
+			#show .s_center .div2 .d2{
+				font-size: 32px;
+				letter-spacing: 3px;	/*字符间距*/
+				margin-left: 526px;
+			}
+			#show .s_center .ic{
+				/*position: absolute;*/
+				width: 120px;
+				height: 35px;
+				/*left: 50%;
+				top: 100%;
+				margin-left: -60px;
+				margin-top: -36px;*/
+				line-height: 35px;
+				text-align: center;
+				margin: 0 auto;
+				margin-top: 50px;
+				color: white;
+				background-color: black;
+				/*border: 1px solid black;*/
+			}
+			#show .s_center .ic .ic_1{
+				width: 120px;
+				height: 3px;
+				background-color: #FFEB00;
+			}
+			
+			/*二维码*/
+			/*#show .saosao{
+				position: absolute;
+				width:100px;
+				height: 100px;
+				top: 70px;
+				right: 70px;
+				border: 1px solid black;
+			}*/
+			
+			/*咨询*/
+			#consult{
+				width: 1300px;
+				height: 500px;
+				margin: 0 auto;
+				/*border: 1px solid black;*/
+				margin-top: 4px;
+				padding-top: 20px;
+				position: relative;
+			}
+			#consult .title_1{
+				text-align: center;
+			}
+			
+			/*中间咨询平台*/
+			#consult .fcon{
+				width: 340px;
+				height:390px;
+				/*border: 1px solid black;*/
+				float: left;
+				margin-left: 110px;
+				margin-top: 5px ;
+				position: relative;
+			}
+			
+			/*中间咨询平台图片*/
+			#consult .fcon .fpic1{
+				width: 240px;
+				height: 240px;
+			/*	border: 1px solid black;*/
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 50px;
+				border-radius: 50%;
+			}
+			
+			/*中间咨询平台*/
+			#consult .con{
+				width: 265px;
+				height:318px;
+				/*border: 1px solid black;*/
+				float: left;
+				margin-left: 100px;
+				margin-top: 68px ;
+				position: relative;
+			}
+			
+			/*中间咨询平台图片*/
+			#consult .con .pic1{
+				width: 170px;
+				height: 170px;
+				/*border: 1px solid black;*/
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 52px;
+				border-radius: 50%;
+			}
+			
+			/*展示栏下方的文字*/
+			#consult .fcon .fscon2{
+				width: 340px;
+				height:120px;
+				/*border: 1px solid black;*/
+				margin-top: 265px;
+				text-align: center;
+				line-height: 150px;
+			}
+			
+			#consult .con .scon2{
+				width: 265px;
+				height:150px;
+				/*border: 1px solid black;*/
+				margin-top: 198px;
+				text-align: center;
+				line-height: 150px;
+			}
+			
+			/*婚姻新闻*/
+			#news{
+				width: 100%;
+				height: 300px;
+				margin: 0 auto;
+				margin-top: 4px;
+				padding-top: 0px;
+				position: relative;
+			}
+			/*#news .ns_title{
+				width: 1300px;
+				height: 44px;
+			}*/
+			#news .title_2,.title_3{
+				width: 580px;
+				height: 44px;
+				float: left;
+				margin-right: 80px;
+			}
+			#news .title_3{
+				width: 480px;
+				height: 44px;
+				float: left;
+			}
+			
+			#news .news_title{
+				width: 150px;
+				height: 44px;
+				line-height: 44px;
+				text-align: center;
+				margin: 0 auto;
+				margin-top: 10px;
+				float: left;
+				color: #ffea00;
+				background-color: #403f46;
+			}
+			
+			/*婚姻新闻顶部标题栏*/
+			/*#news .n_top_left{
+				width: 648px;
+				height:48px;*/
+				/*border: 1px solid black;*/
+				/*float: left;
+				position: relative;
+			}
+			#news .n_top_left span{
+				bottom: 0px;
+				left: 90px;
+				position: absolute;
+			}*/
+			
+			/*婚姻新闻展示栏*/
+			#news .news_show{
+				width: 1300px;
+				height: auto;
+				/*border: 1px solid black;*/
+				margin-top:10px ;
+				float: left;
+			}
+			
+			/*婚姻新闻展示栏图片*/
+			#news .news_show .ns_pic{
+				width: 180px;
+				height: 170px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 25px;
+				border: 1px solid black;
+			}
+			#news .news_show .ns_pic img{
+				width: 180px;
+				height: 170px;
+			}
+			
+			/*婚姻新闻展示栏信息*/
+			#news .news_show .ns_con{
+				width: 400px;
+				height: 150px;
+				padding-top: 20px;
+				text-indent: 2em;
+				float: left;
+				margin-left: 20px;
+				margin-top: 25px;
+			}
+			
+			/*更多婚姻新闻*/
+			#news .n_bottom_left{
+				width: 1250px;
+				height: 20px;
+				margin-top: 15px;
+				padding-top: 10px;
+				float: left;
+			}
+			#news .n_bottom_right{
+				width: 102px;
+				height:40px;
+				float: left;
+				margin-top: 6px;
+				margin-left: 69px;
+			}
+			#news .n_bottom_right .more{
+				width: 100px;
+				height: 40px;
+				font-size: 18px;
+				font-family: 'Bauhaus 93';
+				border-radius: 20px;
+				text-align: center;
+				line-height: 40px;
+				background-color: black;
+				color: white;
+			}
+			
+			/*底部信息*/
+			#f{
+				width: 100%;
+				height: 290px;
+				margin-top: 15px;
+				position: relative;
+			}
+			#foot{
+				width:80%;
+				height: 220px;
+				float: left;
+				padding-top: 5px;
+				background-color: #3f3f44;
+			}
+			#foot .footer{
+				width: 100%;
+				height: 220px;
+			}
+			#foot .footer .foot_left{
+				width: 20%;
+				height: 165px;
+				float: left;
+			}
+			#foot .footer .foot_left .fi{
+				width: 100%;
+				height: 55px;
+				position: relative;
+			}
+			#foot .footer .foot_left .fi .fi_pic{
+				position: absolute;
+				width: 35px;
+				height: 35px;
+				margin: auto;
+				top: 0px;
+				left: 120px;
+				right: 0px;
+				bottom: 0px;
+			}
+			#foot .footer .foot_left .fi img{
+				width: 35px;
+				height: 35px;
+			}
+			#foot .footer .foot_middle{
+				width: 80%;
+				height: 165px;
+				float: left;
+			}
+			#foot .footer .foot_middle .font_1{
+				width: 100%;
+				height: 55px;
+				line-height: 55px;
+				color: white;
+				font-family: '宋体';
+				font-size: 15px;
+				font-weight: bold;
+				letter-spacing: 5px;	/*字符间距*/
+			}
+			#foot .footer .font_2{
+				width: 100%;
+				height: 55px;
+				line-height: 60px;
+				float: left;
+				color: white;
+				font-family: '宋体';
+				font-size: 13px;
+				font-weight: bold;
+				letter-spacing: 5px;	/*字符间距*/
+			}
+			#fr{
+				width: 20%;
+				height: 220px;
+				float: left;
+				padding-top: 5px;
+				background-color: #3f3f44;
+				position: relative;
+			}
+			#fr .fr_pic{
+				position: absolute;
+				width: 120px;
+				height: 130px;
+				margin: auto;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			#fr .fr_pic img{
+				width: 120px;
+				height: 120px;
+				margin-bottom: 5px;
+			}
+			#fr .fr_pic .fr_font{
+				color: white;
+			}
+			#body_bottom{
+				position: absolute;
+				width: 100%;
+				height: 70px;
+				line-height: 47px;
+				background-color: black;
+				color: white;
+				bottom: 0px;
+				}
+			#body_bottom ul li{
+				height: 40px;
+				list-style-type: none;
+				float: left;
+				display: inline;
+				margin-left: 85px;
+			}
+			#body_bottom .shouye{
+				margin-left: 750px;
+			}
+
