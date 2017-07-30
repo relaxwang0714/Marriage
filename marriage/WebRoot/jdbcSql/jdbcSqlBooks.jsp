@@ -19,8 +19,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	String context = request.getContextPath();
 %>
 	<link href="../css/pagination.css" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="../css/jdbcSqlBooks.css"/>
-<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jdbcSqlBooks.css"/>
+<script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/jquery.pagination.js"></script>
 <script type="text/javascript">
 function handlePaginationClick(new_page_index, pagination_container) {

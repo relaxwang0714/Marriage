@@ -22,14 +22,28 @@ function up_say(){
 	        	$('.speak_box').append(ans);
 				for_bottom();
 	        },1000);
-	        
-	        setTimeout(function(){
-	            var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
-	            	ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/jdbcSqlBooks.jsp">点击</a></p><i></i>';
-	        		ans += '</div></div>';
-	        	$('.speak_box').append(ans);
-				for_bottom();
-	        },2000);
+		    setTimeout(function(){
+		       var a=document.getElementById('aaa').value;
+		       if(a==1){
+		          var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+		          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main.jsp">点击</a></p><i></i>';
+		          ans += '</div></div>';
+		          $('.speak_box').append(ans);
+		          for_bottom();
+		       }else if(a==2){
+		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+			          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main_2.jsp">点击</a></p><i></i>';
+			          ans += '</div></div>';
+			          $('.speak_box').append(ans);
+			          for_bottom();
+		       }else if(a==9.2){
+		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+			          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main_9_2.jsp">点击</a></p><i></i>';
+			          ans += '</div></div>';
+			          $('.speak_box').append(ans);
+			          for_bottom();
+		       }
+		        },2000);
 	        
 //	        setTimeout(function(){
 //      	alert("已为您找到相关资料");

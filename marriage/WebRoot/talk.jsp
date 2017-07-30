@@ -33,6 +33,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="answer">
 			<div class="heard_img left"><img src="img/logo f6.png"></div>
 			<div class="answer_text">
+				<input type="hidden" value="<%=request.getParameter("number")%>" id="aaa"/>
 				<p>你好！小凤梨机器人为你服务~<br/>你想搜索的是<strong><%=new String(request.getParameter("name").getBytes("ISO-8859-1"),"utf-8")%></strong><br/>请再继续告诉我你想要的内容^_^</p>
 				<i></i>
 			</div>

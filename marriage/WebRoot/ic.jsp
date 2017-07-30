@@ -135,8 +135,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<form>
 			<div class="title">•婚姻家庭纠纷类</div>
 			<div class="ab">
-				<div class="ab_button"><button><a href="talk.jsp?name=婚约财产纠纷" target="_blank">婚约财产纠纷</a></button></div>
-				<div class="ab_button"><button><a href="talk.html">离婚纠纷</a></button></div>
+				<div class="ab_button"><button><a href="talk.jsp?name=婚约财产纠纷&number=1" target="_blank">婚约财产纠纷</a></button></div>
+				<div class="ab_button"><button><a href="talk.jsp?name=离婚纠纷&number=2" target="_blank">离婚纠纷</a></button></div>
 				<div class="ab_button"><button><a href="talk.html">离婚后财产纠纷</a></button></div>
 				<div class="ab_button"><button><a href="talk.html">离婚后损害财产纠纷</a></button></div>
 				<div class="ab_button"><button><a href="talk.html">离婚后损害责任纠纷</a></button></div>
@@ -188,7 +188,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<!--隐藏二级菜单栏-->
 					<div class="two_show_1">
 						<div class="sd_button1"><button><a href="talk.html">同居关系析产纠纷</a></button></div>
-						<div class="sd_button1"><button><a href="talk.html">同居关系子女抚养纠纷</a></button></div>
+						<div class="sd_button1"><button><a href="talk.jsp?name=同居关系子女抚养纠纷&number=9.2" target="_blank"">同居关系子女抚养纠纷</a></button></div>
 					</div>
 				</div>
 				<div class="sd_button"><button><a href="talk.html">遗嘱继承纠纷</a></button></div>

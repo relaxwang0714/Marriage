@@ -54,7 +54,7 @@ function handlePaginationClick(new_page_index, pagination_container) {
 			
 			<!--导航栏-->
 			<div class="top_right">
-					<span>|&nbsp;&nbsp;<a href="index.html" target="_parent">首页</a>&nbsp;&nbsp;|</span>
+					<span>|&nbsp;&nbsp;<a href="index.jsp" target="_parent">首页</a>&nbsp;&nbsp;|</span>
 				</ul>
 			</div>
 		</div>

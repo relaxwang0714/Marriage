@@ -220,9 +220,31 @@
 			<param-value>KAPTCHA_SESSION_DATE</param-value>
 		</init-param>
 	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JdbcSqlServlet_2</servlet-name>
+    <servlet-class>com.imooc.page.servlet.JdbcSqlServlet_2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JdbcSqlServlet_9_2</servlet-name>
+    <servlet-class>com.imooc.page.servlet.JdbcSqlServlet_9_2</servlet-class>
+  </servlet>
+
+
 
 	<servlet-mapping>
 		<servlet-name>Kaptcha</servlet-name>
 		<url-pattern>/randomcode.jpg</url-pattern>
 	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JdbcSqlServlet_2</servlet-name>
+    <url-pattern>/jdbcSql/JdbcSqlServlet_2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JdbcSqlServlet_9_2</servlet-name>
+    <url-pattern>/jdbcSql/JdbcSqlServlet_9_2</url-pattern>
+  </servlet-mapping>
 </web-app>
