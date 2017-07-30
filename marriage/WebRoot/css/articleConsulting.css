@@ -1,0 +1,89 @@
+			/*a标签*/
+			a:link{
+				color: black;
+				text-decoration: none;
+			}
+			a:active{
+				color: red;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+
+			/*内容布局*/
+			#content{
+				width:100%;
+				height:550px;
+				margin-bottom: 60px;
+				background-image: url(../img/bg_2.png);
+				background-size: 100% 550px;
+			}
+			#content .ac{
+				position: absolute;
+				width: 700px;
+				height: 400px;
+				margin: auto;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				/*border: 1px solid black;*/
+			}
+			/*#content .ac .logo_1{
+				position: absolute;
+				width: 122px;
+				height: 126px;
+				top: 90px;
+			}*/
+			#content .ac .span1{
+				position: absolute;
+				width:200px;
+				height: 50px;
+				font-size:40px;
+				font-family: "宋体";
+				top:110px;
+				right:250px;
+				color: white;
+			}
+			/*搜索框*/
+			#content .ac .form{
+				position: absolute;
+				width:610px;
+				height: 80px;
+				top:195px;
+				left:78px;
+				right:250px;
+				
+			}
+			/*input文本框*/
+			#content .ac .text{
+				width:470px;
+				height: 69px;
+				float: left;
+				background: none;
+				color: white;
+				font-size: 18px;
+				border: 1px solid white;
+			}
+			/*点击后text文本边框变色*/
+			#content .ac .text:focus{
+				outline: none;
+				border:2px solid black;
+			}
+			/*input提交框*/
+			#content .ac .submit{
+				width: 122px;
+				height: 126px;
+				height:71px;
+				line-height: 71px;
+				margin-left: 5px;
+				float:left;
+				background-color: #3dc9b3;
+				border: none;
+				cursor: pointer;
+				color: white;
+				letter-spacing: 4px;
+				font-size: 16.5px;
+			}
+			

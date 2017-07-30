@@ -1,0 +1,309 @@
+			body{
+				background-color: #f6f6f6;
+			}
+			/*a标签*/
+			a:link{
+				color: black;
+				text-decoration: none;
+			}
+			a:active{
+				color: red;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+			/*框架*/
+			#ic{
+				width: 100%;
+				height: auto;
+				background-image: url(../img/bg_3.png);
+				background-size: 100% 100%;
+				padding-top: 46px;
+				padding-bottom: 30px;
+			}
+
+			/*智能查询框*/
+			#icf{
+				width: 800px;
+				height: 625px;
+				margin: 0 auto;
+				/*margin-top: 40px;*/
+				position: relative;
+				border: 0.5px solid black;
+			}
+			
+			/*标题栏*/
+			#icf .icf_nav{
+				width: 800px;
+				height: 46px;
+				line-height: 46px;
+				border-bottom: 0.5px solid black;
+				color: #FFEA00;
+				background-color: #403F46;
+			}
+			
+			#ic_1{
+				width: 800px;
+				height: 578.8px;
+				background-color: white;
+				opacity: 0.95;				/*非IE下的透明度*/
+				filter: alpha(opacity=95);	/*IE下的透明度*/
+				border-bottom: 1px solid black;
+			}
+			/*高级选项*/
+			#icf .ao{
+				width: 774.5px;
+				height: 60px;
+				margin: 0 auto;
+				padding-top: 25px;
+				padding-left: 25px;
+				position: relative;
+				color: #403F46;
+				/*border: 0.5px solid black;*/
+			}
+			
+			/*高级选项按钮*/
+			#icf .ao .ao_select{
+				width: 100px;
+				height: 28px;
+				position: absolute;
+				bottom: 0px;
+				right: 160px;
+				padding-left: 10px;
+				line-height: 28px;
+				background-color: white;
+				border: 1px solid black;
+				cursor: pointer;
+			}
+			#icf .ao .ao_select .ao_select_1{
+				width: 28px;
+				height: 29px;
+				margin-top: -0.5px;
+				background-image: url(../img/logo_2.png);
+				background-size: 28px 28px;
+				float: right;
+				border-color: 1px solid black;
+			}
+			
+			/*高级选项隐藏框*/
+			#icf .aohb{
+				width: 380px;
+				height: 120px;
+				background-color: white;
+				position: absolute;
+				right: 160px;
+				display: none;
+				z-index: 1;
+				border: 1px solid black;
+			}
+			#icf .aohb td{
+				text-align: center;
+			}
+			#ch{
+				width: 76px;
+			}
+			#icf .aohb .input_1{
+				width: 140px;
+			}
+			#icf .aohb .input_2{
+				width: 180px;
+			}
+			#icf .aohb .sure,.reset{
+				width: 100px;
+				background-color: white;
+				padding-left: 5px;
+				border: 1px solid black;
+			}
+			
+			/*高级选项展示栏*/
+			#ao_show{
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				margin-top: 10px;
+				border-top: 1px solid black;
+			}
+			#ao_show span{
+				width: 80%;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			/*标题*/
+			#icf .title{
+				width: 100%;
+				height: 30px;
+				margin: 5px 0 5px 0;
+				line-height: 30px;
+				text-align: center;
+				font-size: 25px;
+			}
+			
+			/*智能咨询按钮*/
+			
+			/*婚姻家庭纠纷类*/
+			#icf .ab{
+				position: relative;
+				width: 100%;
+				height: 270px;
+				/*border: 1px solid black;*/
+			}
+			#icf .ab .ab_button,.ab_buttons{
+				float: left;
+			}
+			#icf .ab button{
+				width: 137px;
+				height: 62px;
+				line-height: 61px;
+				font-size: 13.5px;
+				overflow: hidden;
+				background-color: white;
+				border-radius: 10px;
+				margin: 16px 9px 10px 13px;
+				border: 1px solid black;
+			}
+			#icf .ab button:hover{
+				width: 137px;
+				height: 62px;
+				line-height: 61px;
+				background-color: white;
+				border-radius: 10px;
+				margin: 16px 9px 10px 13px;
+				border: 1px solid red;
+			}
+			#icf .ab a{
+				width: 136px;
+				height: 58px;
+				display: block;
+				color: black;
+				text-decoration: none;
+			}
+			
+			/*隐藏二级菜单栏*/
+			
+			/*同居关系纠纷*/
+			#icf .ab .ab_buttons .two_show_1{
+				position: absolute;
+				display: none;
+				width: auto;
+				height: auto;
+				right: 159px;
+				border-radius: 10px;
+				border: 1px solid black;
+				background-color: white;
+				z-index: 1;
+			}
+			#icf .ab .ab_buttons .two_show_1 .ab_button1{
+				position: static;
+				padding-right: 4px;
+			}
+			
+			/*抚养纠纷*/
+			#icf .ab .ab_buttons .two_show_2{
+				position: absolute;
+				display: none;
+				width: auto;
+				height: auto;
+				right: 1px;
+				border-radius: 10px;
+				border: 0.5px solid black;
+				background-color: white;
+				z-index: 1;
+			}
+			#icf .ab .ab_buttons .two_show_2 .ab_button2{
+				position: static;
+				padding-right: 4px;
+			}
+			
+			/*赡养纠纷*/
+			#icf .ab .ab_buttons .two_show_3{
+				position: absolute;
+				display: none;
+				width: auto;
+				height: auto;
+				left: 1px;
+				border-radius: 10px;
+				border: 0.5px solid black;
+				background-color: white;
+				z-index: 1;
+			}
+			#icf .ab .ab_buttons .two_show_3 .ab_button3{
+				position: static;
+				padding-right: 4px;
+			}
+			
+			/*收养关系纠纷*/
+			#icf .ab .ab_buttons .two_show_4{
+				position: absolute;
+				display: none;
+				width: auto;
+				height: auto;
+				left: 159px;
+				border-radius: 10px;
+				border: 0.5px solid black;
+				background-color: white;
+				z-index: 1;
+			}
+			#icf .ab .ab_buttons .two_show_4 .ab_button4{
+				position: static;
+				padding-right: 4px;
+			}
+			
+			/*继承纠纷类*/
+			#icf .sd{
+				position: relative;
+				width: 100%;
+				height: 200px;
+				/*border: 1px solid black;*/
+			}
+			#icf .sd .sd_button,.sd_buttons{
+				float: left;
+			}
+			#icf .sd button{
+				width: 137px;
+				height: 62px;
+				line-height: 61px;
+				font-size: 13.5px;
+				overflow: hidden;
+				background-color: white;
+				border-radius: 10px;
+				margin: 16px 9px 10px 13px;
+				border: 1px solid black;
+			}
+			#icf .sd button:hover{
+				width: 137px;
+				height: 62px;
+				line-height: 61px;
+				background-color: white;
+				border-radius: 10px;
+				margin: 16px 9px 10px 13px;
+				border: 1px solid red;
+			}
+			#icf .sd a{
+				width: 136px;
+				height: 58px;
+				display: block;
+				color: black;
+				text-decoration: none;
+			}
+			
+			/*隐藏二级菜单栏*/
+			
+			/*法定继承纠纷*/
+			#icf .sd .sd_buttons .two_show_1{
+				position: absolute;
+				display: none;
+				width: auto;
+				height: auto;
+				top: -79px;
+				left: -153px;
+				border-radius: 10px;
+				border: 1px solid black;
+				background-color: white;
+			}
+			#icf .sd .sd_buttons .two_show_1 .sd_button1{
+				position: static;
+				padding-right: 4px;
+			}
+			

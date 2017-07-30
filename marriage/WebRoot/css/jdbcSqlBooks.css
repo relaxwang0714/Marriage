@@ -1,0 +1,130 @@
+#s_r{
+	width: 1420px;
+	height: auto;
+	margin-left: 8px;
+	border: 2px solid #403f46;
+}
+#s_r .s_r_title{
+	width: 100%;
+	height: 30px;
+	background-color: #403f46;
+}
+#s_r .t_font{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #ffea00;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin-left: 15px;
+}
+
+/*内容展示*/
+#content{
+	width: 1400px;
+	height:auto;
+	margin: 0 auto;
+	margin-top: 10px;
+	/*border: 1px solid black;*/
+}
+/*文案条*/
+			#content .news{
+				width: 1260px;
+				height:150px;
+				border-bottom:0.5px solid black ;
+				margin: 0 auto;
+				position: relative;
+			}
+			#content .news .news_pic{
+				position: absolute;
+				width:150px;
+				height:150px;
+				background-image:url(../img/tell.png);
+				background-size: 100px 100px;
+				background-position: center center;
+				background-repeat: no-repeat; 
+				float: left;
+			}
+			/*文案时间*/
+			#content .news .news_pic .times{
+				width:50px;
+				height: 50px;
+			}
+			#content .news .news_pic .times .times_1{
+				position: absolute;
+				width:46px;
+				height: 46px;
+				display:block;
+				word-break: break-all;
+				word-wrap: break-word;
+				margin-bottom: 2px;
+				top: 50px;
+				left: 50px;
+			}
+			
+			
+			/*文案内容*/
+			#content .news .n_title{
+				position: absolute;
+				left: 150px;
+				top: 32px;
+				font-family: "微软雅黑";
+				font-weight: 600;
+				font-size: 17px;
+			}
+			#content .news .n_title a{
+				text-decoration: none;
+				color: black;
+			}
+			#content .news .n_title a:hover{
+				text-decoration: underline;
+				color: black;
+			}
+			#content .news .cl{
+				position: absolute;
+				left: 1040px;
+				top: 35px;
+				font-family: "宋体";
+				font-weight: 600;
+				font-size: 16px;
+			}
+			#content .news .news_con{
+				position: absolute;
+				left: 150px;
+				width: 1000px;
+				height: 41.5px;
+				margin-top:72px;
+				font-size: 14px;
+				/*text-align: center;
+				line-height:100px;*/
+				word-break: break-all;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp:2;
+			}
+			/*收藏*/
+			#content .news .collect{
+				position: absolute;
+				left: 1190px;
+				top: 70px;
+			}
+			#content .news .collect img{
+				width: 20px;
+				height: 20px;
+			}
+			#content .news .collect_font{
+				position: absolute;
+				left: 27px;
+				top: 3px;
+				width: 36px;
+				font-family: "宋体";
+				font-weight: 600;
+				font-size: 16px;
+			}
+			#News-Pagination{
+				margin-left:570px;
+				margin-top:12px;
+				margin-bottom:50px;
+			}
