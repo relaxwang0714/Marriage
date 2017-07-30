@@ -41,13 +41,12 @@ public class EditUserInfo extends HttpServlet {
 
 		String id = request.getParameter("id");
 		String address = request.getParameter("address");
-		address = this.convertCharSet(address);
+		
 		String phone = request.getParameter("phone");
 		phone = this.convertCharSet(phone);
 		String age = request.getParameter("age");
 		age = this.convertCharSet(age);
 		String sex = request.getParameter("sex");
-		sex = this.convertCharSet(sex);
 		UserLogic stuLogic = new UserLogic();
 		int flag = 0;
 		try{

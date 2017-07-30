@@ -10,9 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <title>My JSP 'submit.jsp' starting page</title>
-    
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -27,9 +26,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   <%  session.setMaxInactiveInterval(500);
   	String id="";
-    String username=new String(request.getParameter("username").getBytes("ISO8859_1"),"utf8"); 
+  	String username=new String(request.getParameter("username"));
     System.out.println(username);
-    String password=new String(request.getParameter("password").getBytes("ISO8859_1"),"utf8"); 
+    String password=new String(request.getParameter("password").getBytes("ISO-8859-1"),"utf-8"); 
     System.out.println(password) ;
     try {    
         Class.forName("com.mysql.jdbc.Driver");  

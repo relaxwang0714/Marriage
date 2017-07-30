@@ -55,39 +55,115 @@
 			}
 			
 			/*底部信息*/
-			#foot{
-				width:100%;
-				height: 100px;
-				margin: 0 auto;
+			#f{
+				width: 100%;
+				height: 290px;
+				margin-top: 15px;
 				position: relative;
-				/*border: 1px solid black;*/
+			}
+			#foot{
+				width:80%;
+				height: 220px;
+				float: left;
+				padding-top: 5px;
+				background-color: #3f3f44;
 			}
 			#foot .footer{
-				position: absolute;
-				margin: auto;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				width:720px;
-				height:100px;
+				width: 100%;
+				height: 220px;
 			}
-			#foot .foot_left{
-				width: 70px;
-				height: 50px;
-				border: 1px solid black;
-				/*margin-left: 300px;*/
-				float:left;
-				margin-left:10px;
-				margin-top:25px ;
-			}
-			#foot .foot_right{
-				width: 600px;
-				height: 50px;
-				border: 1px solid black;
+			#foot .footer .foot_left{
+				width: 20%;
+				height: 165px;
 				float: left;
-				margin-left: 20px;
-				margin-top:25px ;
-				text-align: center;
-				padding-top: 2px;
+			}
+			#foot .footer .foot_left .fi{
+				width: 100%;
+				height: 55px;
+				position: relative;
+			}
+			#foot .footer .foot_left .fi .fi_pic{
+				position: absolute;
+				width: 35px;
+				height: 35px;
+				margin: auto;
+				top: 0px;
+				left: 120px;
+				right: 0px;
+				bottom: 0px;
+			}
+			#foot .footer .foot_left .fi img{
+				width: 35px;
+				height: 35px;
+			}
+			#foot .footer .foot_middle{
+				width: 80%;
+				height: 165px;
+				float: left;
+			}
+			#foot .footer .foot_middle .font_1{
+				width: 100%;
+				height: 55px;
+				line-height: 55px;
+				color: white;
+				font-family: '宋体';
+				font-size: 15px;
+				font-weight: bold;
+				letter-spacing: 5px;	/*字符间距*/
+			}
+			#foot .footer .font_2{
+				width: 100%;
+				height: 55px;
+				line-height: 60px;
+				float: left;
+				color: white;
+				font-family: '宋体';
+				font-size: 13px;
+				font-weight: bold;
+				letter-spacing: 5px;	/*字符间距*/
+			}
+			#fr{
+				width: 20%;
+				height: 220px;
+				float: left;
+				padding-top: 5px;
+				background-color: #3f3f44;
+				position: relative;
+			}
+			#fr .fr_pic{
+				position: absolute;
+				width: 120px;
+				height: 130px;
+				margin: auto;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			#fr .fr_pic img{
+				width: 120px;
+				height: 120px;
+				margin-bottom: 5px;
+			}
+			#fr .fr_pic .fr_font{
+				color: white;
+			}
+			#body_bottom{
+				position: absolute;
+				width: 100%;
+				height: 70px;
+				line-height: 47px;
+				background-color: black;
+				color: white;
+				bottom: 0px;
+				}
+			#body_bottom ul li{
+				height: 40px;
+				list-style-type: none;
+				float: left;
+				display: inline;
+				margin-left: 85px;
+			}
+			#body_bottom .shouye{
+				margin-left: 750px;
 			}

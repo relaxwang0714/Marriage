@@ -2,9 +2,9 @@ body{
 	background: #ddd
 }
 .loginwarrp{
-	margin: 150px auto;
+	margin: 230px auto;
     width: 400px;
-    padding: 20px 50px;
+    padding: 25px 50px;
     background: #FFFFFF;
     overflow: hidden;
     font-size: 14px;
@@ -22,8 +22,6 @@ body{
 	margin-top: 15px;
 }
 .loginwarrp .login_form .login-item{
-	height: 43px;
-	line-height: 43px;
 	padding: 2px 8px;
 	border:1px solid #dedede;
 	border-radius: 8px;
@@ -64,4 +62,5 @@ body{
 .loginwarrp .login_form .login-item .error{
 	color: #F00;
 	font-family:"微软雅黑";
+	font-size:"12px";
 }

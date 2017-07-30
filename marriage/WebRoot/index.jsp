@@ -9,7 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'index.jsp' starting page</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+		<title>小凤梨法律咨询</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -20,7 +21,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/back_top.css"/>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/top.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				var a=$('#top .top_right .input1').val();
@@ -34,7 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					$('#top .top_right .input1').hide();
 				}
 				
-			})
+			});
 		</script>
 	
   </head>
@@ -50,21 +53,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
 			<!--logo站名-->
 			<div class="top_left">
-				<!--律兜婚姻-->
+				<img src="img/logo f6.png" />
 			</div>
 			
 			<!--导航栏-->
 			<div class="top_right">
-					<span class="tr_1">|&nbsp;<a href="index.html">首页</a>&nbsp;
-						|&nbsp;<a href="login.jsp">登陆</a>&nbsp;
+					<span class="tr_1">|&nbsp;<a href="index.jsp">首页</a>&nbsp;
+						|&nbsp;<a href="login.jsp">登录</a>&nbsp;
 						|&nbsp;<a href="register.html">注册</a>&nbsp;|
 					</span>
 					<span class="tr_2">
 						 
-						欢迎你，<a href="edit_userinfo.jsp?id=6"><strong></strong></a>
+						欢迎你，<a href="edit_userinfo.jsp?id=${id}"><strong>${username}</strong></a>
 						<a href="logout">退出登陆</a>
 					</span>
-					<input type="button" name="input1" value="" class="input1"/>
+					<input type="button" name="input1" value="${username}" class="input1"/>
 			</div>
 		</div>
 		
@@ -74,7 +77,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="s_center">
 				<div class="div1"><div class="d1">律兜婚姻<br />在线智能咨詢</div></div>
 				<div class="div2"><div class="d2">捍卫你的权利&nbsp;&nbsp;保障你的利益</div></div>
-				<a href="ic.html">
+				<a href="ic.jsp">
 					<div class="ic">
 						立即查询
 						<div class="ic_1"></div>
@@ -97,21 +100,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<p></p>
 			
 			<div class="con">
-				<a href="di.html">
+				<a href="di.jsp">
 					<img src="img/di.gif" class="pic1"/>
 				</a>
 				<div class="scon2">文书查询</div>
 			</div>
 			
 			<div class="fcon">
-				<a href="ic.html">
+				<a href="ic.jsp">
 					<img src="img/ic.gif" class="fpic1"/>
 				</a>
 				<div class="fscon2">智能咨询</div>
 			</div>
 			
 			<div class="con">
-				<a href="articleConsulting.html">
+				<a href="articleConsulting.jsp">
 					<img src="img/articleConsulting.gif" class="pic1"/>
 				</a>
 				<div class="scon2">法条查询</div>
@@ -133,20 +136,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<img src="img/logo_3.jpg" />
 				</div>
 				<div class="ns_con">
+					<a href="#">
 					我国《婚姻法》第四十七条规定：“离婚时，一方隐藏、转移、变卖、毁损夫妻共同财产，
 					或伪造债务企图侵占另一方财产的，分割夫妻共同财产时，对隐藏、转移、变卖、毁损夫
 					妻共同财产或伪造债务的一方，可以少分或不分。离婚后，另一方发现有上述行为的，可以
 					向人民法院提起诉讼，请求再次分割夫妻共同财产。”...
+					</a>
 				</div>
 				<div class="ns_pic">
 					<img src="img/logo_4.jpg" />
 				</div>
 				<div class="ns_con">
+					<a href="#">
 					最高人民法院公报：精神病人伤害了配偶，配偶提起损害赔偿诉讼的，法院是否支持？
 					妻同为一体，家暴是法律明文禁止的，但若是配偶不具有刑事责任能力，伤害了另一方，
 					另一方提起损害赔偿诉讼的，法院是不予支持的,但不意味着配偶可以随意伤害对方《中
 					华人民法...
-
+					</a>
 				</div>
 				
 			</div>
@@ -195,6 +201,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<li>新闻中心</li>
 			</ul>
 		</div>
+		</div>
+		<div class="floating_ck">
+			<dl>
+		    	<dt></dt>
+		        <dd class="qrcord">
+		        	<span>扫一扫</span>
+		            <div class="floating_left floating_ewm">
+		            	<i></i>
+		                <p class="qrcord_p01">扫一扫<br>律兜咨询</p>
+		                <p class="qrcord_p02">全国服务热线<br><b>4008591580<b></p>
+		            </div>
+		        </dd>
+		        <dd class="return">
+		        	<span onClick="gotoTop();return false;">返回顶部</span>
+		        </dd>
+		    </dl>
 		</div>
   </body>
 </html>

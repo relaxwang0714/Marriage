@@ -20,7 +20,8 @@ public class UserLogic {
 			while (rs.next()){
 				UserInfo users = new UserInfo();
 				users.setId(rs.getInt("id"));
-				users.setAddress(rs.getString("address"));
+				String ADDRESS=new String(rs.getString("address")); 
+				users.setAddress(ADDRESS);
 				users.setPhone(rs.getString("phone"));
 				users.setAge(rs.getString("age"));
 				users.setSex(rs.getString("sex"));

@@ -9,8 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    
-    <title>My JSP 'login.jsp' starting page</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>登录</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -34,8 +34,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="login_form">
 			<form id="Login" name="Login" method="post" onsubmit="" action="submit.jsp">
 				<li class="login-item">
-					<span>用户名：</span>
-					<input type="text" id="username" name="username" class="login_input" >
+					<span>用户名称：</span>
+					<input type="text" id="username" name="username" class="login_input" required="required">
                                         <span id="count-msg" class="error"></span>
 				</li>
 				<li class="login-item">

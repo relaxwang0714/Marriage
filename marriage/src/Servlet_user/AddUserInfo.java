@@ -39,13 +39,11 @@ public class AddUserInfo extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String address = request.getParameter("address");
-		address = this.convertCharSet(address);
 		String phone = request.getParameter("phone");
 		phone = this.convertCharSet(phone);
 		String age = request.getParameter("age");
 		age = this.convertCharSet(age);
 		String sex = request.getParameter("sex");
-		sex = this.convertCharSet(sex);
 		UserLogic userLogic = new UserLogic();
 		String sqlTxt = "insert into userdata" +
 				"(address,phone,age,sex) values("

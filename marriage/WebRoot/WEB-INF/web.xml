@@ -45,6 +45,31 @@
     <servlet-name>AddUserInfo</servlet-name>
     <url-pattern>/servlet/AddUserInfo</url-pattern>
   </servlet-mapping>
+  
+  <filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.imooc.page.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+  <servlet>
+    <servlet-name>SublistServlet</servlet-name>
+    <servlet-class>com.imooc.page.servlet.SublistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SublistServlet</servlet-name>
+    <url-pattern>/sublist/SublistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>JdbcSqlServlet</servlet-name>
+    <servlet-class>com.imooc.page.servlet.JdbcSqlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JdbcSqlServlet</servlet-name>
+    <url-pattern>/jdbcSql/JdbcSqlServlet</url-pattern>
+  </servlet-mapping>
     
   <!-- 登陆验证码Kaptcha 2-->
 	<servlet>

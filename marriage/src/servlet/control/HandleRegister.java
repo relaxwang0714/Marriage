@@ -27,7 +27,7 @@ public class HandleRegister extends HttpServlet {
 	   super.init(config);
 	   try{ Class.forName("com.mysql.jdbc.Driver");}
 	   catch(Exception e){
-		   System.out.print("Ê§°Ü!");
+		   System.out.print("å¤±è´¥!");
 	   }
    }
     
@@ -41,7 +41,7 @@ public class HandleRegister extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
 		// TODO Auto-generated method stub
 		register_db ab = new register_db();
-		String username=new String(request.getParameter("logname").getBytes("ISO-8859-1"),"utf8");
+		String username=new String(request.getParameter("logname"));
 		String password = request.getParameter("password");
 		//String phone = request.getParameter("phone");
 		//String address=new String(request.getParameter("address").getBytes("ISO-8859-1"),"utf8");
@@ -50,7 +50,7 @@ public class HandleRegister extends HttpServlet {
 		register userBean = new register();
 		request.setAttribute("userBean", userBean);
 		if(!password.equals(again_password)){
-			userBean.setBackNews("Á½´ÎÃÜÂë²»Í¬£¬×¢²áÊ§°Ü");
+			userBean.setBackNews("ä¸¤æ¬¡å¯†ç ä¸åŒï¼Œæ³¨å†Œå¤±è´¥");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("register.html");
 			dispatcher.forward(request, response);
 		}
@@ -60,7 +60,7 @@ public class HandleRegister extends HttpServlet {
 		
 		}
 		catch(Exception exp){
-			System.out.print("×¢²áÊ§°Ü");
+			System.out.print("æ³¨å†Œå¤±è´¥");
 		}
 		
 	}
