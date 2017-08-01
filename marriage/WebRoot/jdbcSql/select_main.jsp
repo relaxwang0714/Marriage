@@ -9,7 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'select_main.jsp' starting page</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+		<title>查询结果</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,6 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
     <frameset rows="230px,*" border="0">
 	<frame src="jdbcSql/select_top.jsp" />
-	<frame src="jdbcSql/jdbcSqlBooks.jsp" name="contents"/>
+	<frame src="jdbcSql/JdbcSqlServlet" name="contents"/>
   </frameset>
 </html>

@@ -25,6 +25,7 @@ public class booksLogic {
 				books.setCourt_level(rs.getInt("court_level"));
 				books.setCourt(rs.getString("court"));
 				books.setTime(rs.getString("time"));
+				books.setContent(rs.getString("content"));
 				alBooks.add(books);
 			}
 		}

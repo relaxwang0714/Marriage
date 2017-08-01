@@ -32,7 +32,7 @@ function handlePaginationClick(new_page_index, pagination_container) {
 $(function(){
 	$("#News-Pagination").pagination(${result.totalRecord}, {
         items_per_page:${result.pageSize}, // 每页显示多少条记录
-        current_page:${result.currentPage} - 1, // 当前显示第几页数据
+        current_page:${result.currentPage}- 1, // 当前显示第几页数据
         num_display_entries:8, // 分页显示的条目数
         next_text:"下一页",
         prev_text:"上一页",
@@ -47,9 +47,14 @@ $(function(){
 <body style="background-color: #f6f6f6;">
 		
 		<div>
-		
+			<%
+				String level=(String)session.getAttribute("court_levelstr");
+				if(level==null||"".equals(level)){
+					level="0";
+				}
+			 %>
 			<form action="<%=context %>/jdbcSql/JdbcSqlServlet"  id="stuForm"  method="post" target="contents">
-				<input name="court_level" id="court_level" value="<%=session.getAttribute("court_levelstr") %>" type="hidden">
+				<input name="court_level" id="court_level" value="<%out.print(level); %>" type="hidden">
 				
 			</form>
 		</div>		
@@ -81,7 +86,7 @@ $(function(){
 						</div>
 						
 						<div class="n_title">
-							<a href="../show_books.jsp?id=${books.id}">
+							<a href="../show_books.jsp?id=${books.id}" target="_blank">
 								<c:out value="${books.title }"></c:out>
 							</a>
 						</div>
@@ -98,8 +103,10 @@ $(function(){
 						</div>
 						
 						<div class="collect">
-							<img src="../img/premium.png"/>
-							<div class="collect_font">收藏</div>
+							<a href="downloadServlet.do?filename=${books.id}.txt">
+								<img src="../img/premium.png"/>
+								<div class="collect_font">下载</div>
+							</a>
 						</div>
 					</div>
 				</c:forEach>

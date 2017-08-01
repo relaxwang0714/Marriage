@@ -233,6 +233,18 @@
     <servlet-class>com.imooc.page.servlet.JdbcSqlServlet_9_2</servlet-class>
   </servlet>
 
+	<servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.imooc.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet_2</servlet-name>
+    <servlet-class>com.imooc.servlet.DownloadServlet_2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet_9_2</servlet-name>
+    <servlet-class>com.imooc.servlet.DownloadServlet_9_2</servlet-class>
+  </servlet>
 
 
 	<servlet-mapping>
@@ -246,5 +258,17 @@
   <servlet-mapping>
     <servlet-name>JdbcSqlServlet_9_2</servlet-name>
     <url-pattern>/jdbcSql/JdbcSqlServlet_9_2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/jdbcSql/downloadServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet_2</servlet-name>
+    <url-pattern>/jdbcSql/downloadServlet_2.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet_9_2</servlet-name>
+    <url-pattern>/jdbcSql/downloadServlet_9_2.do</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -12,7 +12,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<title>法条查询</title>
 		<link rel="stylesheet" type="text/css" href="css/top.css"/>
 		<link rel="stylesheet" type="text/css" href="css/articleConsulting.css"/>
+		<link rel="stylesheet" href="css/zebra_tooltips.css" type="text/css">
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/zebra_tooltips.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				var a=$('#top .top_right .input1').val();
@@ -27,6 +29,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				}
 				
 			});
+			$(document).ready(function() {
+					new $.Zebra_Tooltips($('.zebra_tips1'));
+				});
 		</script>
 	</head>
 	<body>
@@ -51,8 +56,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</span>
 					<span class="tr_2">
 						 |&nbsp;<a href="index.jsp">首页</a>&nbsp;|
-						欢迎你，<a href="edit_userinfo.jsp?id=6"><strong>${username}</strong></a>
-						<a href="logout">退出登陆</a>
+						欢迎你，<a href="edit_userinfo.jsp?id=6" class="zebra_tips1" title="点击查看/修改个人资料"><strong>${username}</strong></a>
+						<a href="logout">退出登录</a>
 					</span>
 					<input type="button" name="input1" value="${username}" class="input1"/>
 			</div>

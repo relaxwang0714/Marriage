@@ -2,7 +2,7 @@ function up_say(){
 		$('.write_list').remove();
 	    var text = $('.write_box input').val(),
 	        str  = '<div class="question">';
-	        str += '<div class="heard_img right"><img src="img/logo f6.png"></div>';
+	        str += '<div class="heard_img right"><img src="img/touxiang2.jpg"></div>';
 	        str += '<div class="question_text clear"><p>'+text+'</p><i></i>';
 	        str += '</div></div>';
 
@@ -16,7 +16,7 @@ function up_say(){
 	        autoWidth();
 	        for_bottom();
 	        setTimeout(function(){
-	            var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+	            var ans  = '<div class="answer"><div class="heard_img left"><img src="img/touxiang1.jpg"></div>';
 	            	ans += '<div class="answer_text"><p>正在为您搜索...<br/>稍等片刻哦~</p><i></i>';
 	        		ans += '</div></div>';
 	        	$('.speak_box').append(ans);
@@ -25,19 +25,19 @@ function up_say(){
 		    setTimeout(function(){
 		       var a=document.getElementById('aaa').value;
 		       if(a==1){
-		          var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+		          var ans  = '<div class="answer"><div class="heard_img left"><img src="img/touxiang1.jpg"></div>';
 		          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main.jsp">点击</a></p><i></i>';
 		          ans += '</div></div>';
 		          $('.speak_box').append(ans);
 		          for_bottom();
 		       }else if(a==2){
-		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/touxiang1.jpg"></div>';
 			          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main_2.jsp">点击</a></p><i></i>';
 			          ans += '</div></div>';
 			          $('.speak_box').append(ans);
 			          for_bottom();
 		       }else if(a==9.2){
-		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+		    	   var ans  = '<div class="answer"><div class="heard_img left"><img src="img/touxiang1.jpg"></div>';
 			          ans += '<div class="answer_text"><p>已为您找到相关文档点击进入<br/><a href="jdbcSql/select_main_9_2.jsp">点击</a></p><i></i>';
 			          ans += '</div></div>';
 			          $('.speak_box').append(ans);
@@ -80,13 +80,13 @@ function up_say(){
         //$('.wenwen_text .circle-button').css('color','#666');    
         $('.saying').hide();
         var str  = '<div class="question">';
-	        str += '<div class="heard_img right"><img src="img/logo f6.png"></div>';
+	        str += '<div class="heard_img right"><img src="img/touxiang1.jpg"></div>';
 	        str += '<div class="question_text clear"><p>不好意思，我听不清！</p><i></i>';
 	        str += '</div></div>';
 		$('.speak_box').append(str);
 		for_bottom();
         setTimeout(function(){
-        	var ans  = '<div class="answer"><div class="heard_img left"><img src="img/logo f6.png"></div>';
+        	var ans  = '<div class="answer"><div class="heard_img left"><img src="img/touxiang1.jpg"></div>';
 	        	ans += '<div class="answer_text"><p>我不知道你在说什么?</p><i></i>';
 	    		ans += '</div></div>';
 	    	$('.speak_box').append(ans);
